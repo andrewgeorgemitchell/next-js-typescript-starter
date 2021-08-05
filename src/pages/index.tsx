@@ -1,18 +1,9 @@
-import Head from 'next/head';
 import Image from 'next/image';
+import Layout from '~/components/Layout/Layout';
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>TypeScript starter for Next.js</title>
-        <meta
-          name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <Layout title="TS Starter" description="Typescript Starter for Next js">
       <main>
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -62,6 +53,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+    </Layout>
   );
 }
